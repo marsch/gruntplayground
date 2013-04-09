@@ -1,6 +1,6 @@
 'use strict'
 
-require '../../vendor/js/jquery/jquery'
+require '../vendor/js/jquery/jquery'
 
 # Ensure we're working with an unmodified version of jQuery.
 jQuery = window.jQuery.noConflict()
