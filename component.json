@@ -1,0 +1,46 @@
+{
+  "name": "grunttest",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "1.8.x",
+    "underscore": "1.4.x",
+    "backbone": "0.9.x",
+    "requirejs": "2.1.x",
+    "almond": "0.2.x",
+    "chaplin": "0.7.x",
+    "mustache": "0.7.x",
+    "bootstrap": "2.3.x",
+    "bootstrap-sass": "2.2.x"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "js": "jquery.js"
+    },
+    "almond": {
+      "js": "almond.js"
+    },
+    "underscore": {
+      "js": "underscore.js"
+    },
+    "backbone": {
+      "js": "backbone.js"
+    },
+    "requirejs": {
+      "js": "require.js"
+    },
+    "chaplin": {
+      "js": "amd/chaplin.js"
+    },
+    "mustache": {
+      "js": "mustache.js"
+    },
+    "bootstrap-sass": {
+      "css": "lib/**/*.scss",
+      "img": "img/glyphicons-*.png"
+    },
+    "bootstrap": {
+      "js": "js/*.js"
+    }
+  }
+}
+

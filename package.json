@@ -1,0 +1,32 @@
+{
+  "name": "grunttest",
+  "version": "0.0.1",
+  "description": "ERROR: No README.md file found!",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-coffee": "~0.6.2",
+    "grunt-requirejs": "0.3.x",
+    "grunt-bower-task": "~0.1.1",
+    "grunt-urequire": "~0.3.1",
+    "grunt-compass": "~0.3.9",
+    "lodash": "~1.0.1",
+    "grunt-preprocess": "git://github.com/marsch/grunt-preprocess.git",
+    "grunt-env": "~0.2.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jasmine": "~0.4.2",
+    "grunt-template-jasmine-requirejs": "~0.1.0",
+    "mustache": "~0.7.2",
+    "grunt-mustache": "~0.1.4"
+  }
+}
