@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="assets/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="assets/chai.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      var should = chai.should();
+      var expect = chai.expect;
+    </script>
+
+
+    <!-- include the final source file -->
+    <script src="../../final/js/main.js"></script>
+
+
+    <script src="specs/simpleTest.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
