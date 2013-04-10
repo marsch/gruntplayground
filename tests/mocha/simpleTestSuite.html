@@ -11,10 +11,17 @@
     <script src="assets/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
     <script src="assets/chai.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="assets/expect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/sinon.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/sinon-expect-0.2.0.js" type="text/javascript" charset="utf-8"></script>
+
     <script type="text/javascript" charset="utf-8">
       var should = chai.should();
-      var expect = chai.expect;
+      var expect = SinonExpect.enhance(expect, sinon, 'was');
     </script>
+
+
 
 
     <!-- include the final source file -->
@@ -23,7 +30,11 @@
 
     <script src="specs/simpleTest.js"></script>
     <script>
-      mocha.run();
+        if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+            mocha.run();
+        }
     </script>
+
+    <div data-id="container">container</div>
   </body>
 </html>

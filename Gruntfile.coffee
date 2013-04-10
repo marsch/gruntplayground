@@ -234,25 +234,6 @@ module.exports = (grunt) ->
           verbose: true
         }
 
-    jasmine:
-      src: '/*.js'
-      options:
-        outfile: './_SpecRunner.html'
-        specs: BUILD_TMP_DIR + '/js-spec/jasmine/**Spec.js'
-        helper: BUILD_TMP_DIR + '/js-spec/jasmine/*Helper.js'
-        template: require('grunt-template-jasmine-requirejs')
-        templateOptions:
-          requireConfig:
-            baseUrl: BUILD_TMP_DIR + '/tmp/final/' + BUILD_JS_SUB_PATH
-            paths:
-              depend: 'tmp/js-amd/lib/require-depend'
-              underscore: 'tmp/js-amd/vendor/underscore'
-              jquery: 'tmp/js-amd/vendor/jquery'
-              backbone: 'tmp/js-amd/vendor/backbone'
-              mustache: 'tmp/vendor/js/mustache/mustache'
-              chaplin: 'tmp/vendor/js/chaplin/chaplin'
-
-
     mocha:
       all:
         src: [BUILD_TMP_DIR + '/js-spec/mocha/**/*TestSuite.html']
@@ -304,7 +285,6 @@ module.exports = (grunt) ->
     'coffee:tests'
     'requirejs'
 
-    'jasmine'
     'mocha:all'
   ]
 

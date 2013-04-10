@@ -1,5 +1,5 @@
 {
-  "name": "grunttest",
+  "name": "OxleMoxle",
   "version": "0.0.1",
   "description": "ERROR: No README.md file found!",
   "private": "true",
@@ -24,11 +24,8 @@
     "grunt-preprocess": "git://github.com/marsch/grunt-preprocess.git",
     "grunt-env": "~0.2.1",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-jasmine": "~0.4.2",
-    "grunt-template-jasmine-requirejs": "~0.1.0",
     "mustache": "~0.7.2",
     "grunt-mustache": "~0.1.4",
-    "grunt-mocha": "~0.3.0",
-    "grunt-contrib-concat": "~0.2.0"
+    "grunt-mocha": "~0.3.0"
   }
 }
